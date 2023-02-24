@@ -1,6 +1,6 @@
 const express =require('express');
 const app=express()
-const port = process.env.PORT || 3005;
+const port = process.env.PORT || 6000;
 
 // app.use(express.json())
 app.get('/currency', function(req, res) {
