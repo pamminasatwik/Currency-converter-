@@ -1,10 +1,10 @@
 const express =require('express');
 const app=express()
-const port = process.env.PORT || 6000;
+const port = process.env.PORT || 3003;
 
 // app.use(express.json())
-app.get('/currency', function(req, res) {
-    res.sendFile(process.cwd() + '/cur.html');
+app.get('/', function(req, res) {
+    res.sendFile(__dirname + '/cur.html');
 });
 
 
